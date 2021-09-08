@@ -13,7 +13,7 @@ public class DAO {
      
     public DAO(){
         if(con == null){
-            String dbUrl = "jdbc:mysql://localhost:3306/hotel?autoReconnect=true&useSSL=false";
+            String dbUrl = "jdbc:mysql://localhost:3306/caro?autoReconnect=true&useSSL=false";
             String dbClass = "com.mysql.jdbc.Driver";
  
             try {

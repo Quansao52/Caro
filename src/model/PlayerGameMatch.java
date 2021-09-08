@@ -16,14 +16,16 @@ public class PlayerGameMatch {
     private Time time;
     private String eventString;
     private int winnerid;
+    private int totalmove;
     public PlayerGameMatch(){
         super();
     }
-    public PlayerGameMatch(int id, Time time, String eventString,int winnerid){
+    public PlayerGameMatch(int id, Time time, String eventString,int winnerid,int totalmove){
         super();
         this.eventString=eventString;
         this.time=time;
         this.winnerid=winnerid;
+        this.totalmove=totalmove;
     }
 
     public int getId() {
@@ -54,6 +56,14 @@ public class PlayerGameMatch {
 
     public void setWinnerid(int winnerid) {
         this.winnerid = winnerid;
+    }
+
+    public int getTotalmove() {
+        return totalmove;
+    }
+
+    public void setTotalmove(int totalmove) {
+        this.totalmove = totalmove;
     }
     
 }

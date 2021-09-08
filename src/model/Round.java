@@ -5,11 +5,13 @@
  */
 package model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Lenovo
  */
-public class Round {
+public class Round implements Serializable {
     private int id;
     private String name;
     public Round(){
